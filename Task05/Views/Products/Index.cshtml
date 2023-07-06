@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Product>
+
+<h1>Products</h1>
+
+<h2>Using ViewBag</h2>
+<ul>
+    @foreach (var product in ViewBag.Products)
+    {
+        <li>@product.Name (@product.Price)</li>
+    }
+</ul>
+
+<h2>Using Model</h2>
+<ul>
+    @foreach (var product in Model)
+    {
+        <li>@product.Name (@product.Price)</li>
+    }
+</ul>
